@@ -1,1 +1,18 @@
-<p>recipe-detail works!</p>
+<h1>{{recipeCh.name}}</h1>
+<h1>{{recipeCh.description}}</h1>
+<h1>{{recipeCh.imgUrl}}</h1>
+<button type="button" class="btn btn-danger" (click)="deleteItem()">remove Item</button>
+<br>
+<br>
+<div class="col-md-5">
+  <div class="form-group">
+    <label for="name">NAME:</label>
+    <input type="text" id="name"  [(ngModel)]="name">
+    <label for="name">Description:</label>
+    <input type="text" id="desc" [(ngModel)]="desc">
+    <label for="name">Image Url:</label>
+    <input type="text" id="imgUrl" [(ngModel)]="imgUrl">
+  </div>
+</div>
+<br>
+<button type="button" class="col-md-5 btn btn-success" (click)="editItem()">Update</button>
